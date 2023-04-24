@@ -1,0 +1,54 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+body {
+  color: white;
+  background: #333;
+}
+
+a {
+  color: white;
+}
+
+button,
+.btn {
+  color: #333;
+  text-decoration: none;
+  background: beige;
+  padding: 10px;
+  border: 1px solid lightblue;
+  border-radius: 5px;
+  margin: 15px 15px 15px 0;
+  transition: .2s all;
+}
+
+button:hover,
+.btn:hover {
+  cursor: pointer;
+  background: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.main {
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.productImage {
+  width: 200px;
+  height: auto;
+}
+

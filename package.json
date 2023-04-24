@@ -1,5 +1,5 @@
 {
-  "name": "nextjs-mongodb-auth",
+  "name": "auth-mongoose",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,14 +9,19 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@types/node": "18.16.0",
-    "@types/react": "18.0.38",
-    "@types/react-dom": "18.0.11",
-    "eslint": "8.39.0",
-    "eslint-config-next": "13.3.1",
-    "next": "13.3.1",
+    "@types/react": "^18.0.38",
+    "bcrypt": "^5.0.1",
+    "mongodb": "4.1",
+    "mongoose": "^6.5.4",
+    "next": "12.2.5",
+    "next-auth": "^4.10.3",
+    "next-connect": "^0.13.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "typescript": "5.0.4"
+    "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "eslint": "8.23.0",
+    "eslint-config-next": "12.2.5"
   }
 }
