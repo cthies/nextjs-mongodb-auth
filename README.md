@@ -36,9 +36,9 @@ Click "Connect your application" and copy credentials from application code
 
 ### Add your MongoDB credentials for development
 
-Create a new file in your root directory: .env 
+Create a new file in your root directory: .env.local 
 
-Copy the credentials from your database to .env to define DB_URI 
+Copy the credentials from your database to .env.local to define DB_URI 
 ```
 DB_URI=mongodb+srv://<USERNAME>:<PASSWORD>@cluster0.ve9hms1.mongodb.net/?retryWrites=true&w=majority
 ```

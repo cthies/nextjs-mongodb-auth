@@ -10,7 +10,7 @@ function AuthPage() {
   useEffect(() => {
     getSession().then((session) => {
       if (session) {
-        router.push('/');
+        router.push('/products');
       } else {
         setIsLoading(false);
       }

@@ -51,7 +51,7 @@ export default NextAuth({
         },
     },  
   pages: {
-    // Here you can define your own custom pages for login, recover password, etc.
-      signIn: '/login', // we are going to use a custom login page (we'll create this in just a second)
+      // Here you can define your own custom pages for login, recover password, etc.
+      signIn: '/login', 
   },
 })

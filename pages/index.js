@@ -1,21 +1,20 @@
 import { useSession, signOut, signIn } from 'next-auth/react';
-import Link from 'next/link';
+import Login from '../components/login';
+import Logout from '../components/logout';
 
-export default function Home({ products }) {
+export default function Home() {
   const { data: session } = useSession();
 
   return (
     <div>
       {session?.user?.email ? (
-        <>
-          <h1>Hello {session?.user?.email}</h1>
-          <button onClick={() => signOut()}>Sign Out</button>
-        </>
+
+        <Logout email={session?.user?.email} />
+
       ) : (
-        <>
-          <h1>Please create an account to see our products</h1>
-          <Link className='btn' href="/login" legacyBehavior={false}>Login or create account</Link>
-        </>
+
+          <Login/>
+
       )}
     </div>
   )
